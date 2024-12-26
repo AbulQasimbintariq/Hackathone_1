@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 import Head from 'next/head';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import NewArrivals from './components/NewArrivals';
 import TopSelling from './components/TopSelling';
