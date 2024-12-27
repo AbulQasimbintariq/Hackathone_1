@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 const topProducts = [
     { name: 'Vertical Striped Shirt', price: 212, rating: 5, image: '/images/striped-shirt.jpg', discount: 20 },
     { name: 'Courage Graphic T-shirt', price: 145, rating: 4, image: '/images/graphic-tshirt.jpg' },
@@ -14,7 +15,9 @@ const topProducts = [
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {topProducts.map((product, index) => (
               <div key={index} className="bg-white shadow-md rounded p-4">
-                <Image src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded" />
+                <Image src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded" 
+                   width={500} 
+                   height={500}/>
                 <h3 className="text-lg font-bold">{product.name}</h3>
                 <p className="text-xl font-semibold">${product.price}</p>
                 {product.discount && <p className="text-red-500">-{product.discount}%</p>}

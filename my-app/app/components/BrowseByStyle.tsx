@@ -14,7 +14,10 @@ const styles = [
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {styles.map((style, index) => (
               <div key={index} className="bg-white shadow-md rounded p-4 text-center">
-                <Image src={style.image} alt={style.name} className="w-full h-48 object-cover mb-4 rounded" />
+                <Image src={style.image} alt={style.name} className="w-full h-48 object-cover mb-4 rounded"
+                   width={500} // replace with the actual width of your image
+                   height={500}
+                    />
                 <h3 className="text-lg font-bold">{style.name}</h3>
               </div>
             ))}
