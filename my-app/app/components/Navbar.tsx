@@ -27,7 +27,7 @@ const Navbar = () => {
           </ul>
           <div className="space-x-4">
             <input type="text" placeholder="Search for products..." className="border rounded py-1 px-2 w-80" />
-            <button className="hidden md:{py-1 px-4 rounded  bg-black text-white}">Sign Up</button>
+            <button className="py-1 px-4 rounded bg-black text-white">Sign Up</button>
           </div>
         </div>
       </nav>

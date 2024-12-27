@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const topProducts = [
-    { name: 'Vertical Striped Shirt', price: 212, rating: 5, image: '/images/striped-shirt.jpg', discount: 20 },
-    { name: 'Courage Graphic T-shirt', price: 145, rating: 4, image: '/images/graphic-tshirt.jpg' },
-    { name: 'Loose Fit Bermuda Shorts', price: 80, rating: 3, image: '/images/bermuda-shorts.jpg' },
-    { name: 'Faded Skinny Jeans', price: 210, rating: 4.5, image: '/images/faded-skinny-jeans.jpg' },
+    { name: 'Vertical Striped Shirt', price: 212, rating: 5, image: '/images/shirt7.jpg', discount: 20 },
+    { name: 'Courage Graphic T-shirt', price: 145, rating: 4, image: '/images/shirt8.jpg' },
+    { name: 'Loose Fit Bermuda Shorts', price: 80, rating: 3, image: '/images/shirt9.jpg' },
+    { name: 'Faded Skinny Jeans', price: 210, rating: 4.5, image: '/images/shirt10.jpg' },
   ];
   
   const TopSelling = () => {

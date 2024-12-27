@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const products = [
-    { name: 'T-shirt with Tape Details', price: 120, rating: 4.5, image: '/images/tape-tshirt.jpg', },
-    { name: 'Skinny Fit Jeans', price: 240, rating: 3.5, image: '/images/skinny-jeans.jpg', discount: 20 },
-    { name: 'Checkered Shirt', price: 180, rating: 4.5, image: '/images/checkered-shirt.jpg' },
-    { name: 'Sleeve Striped T-shirt', price: 130, rating: 4.5, image: '/images/striped-tshirt.jpg' },
+    { name: 'T-shirt with Tape Details', price: 120, rating: 4.5, image: '/images/shirt3.jpg', },
+    { name: 'Skinny Fit Jeans', price: 240, rating: 3.5, image: '/images/shirt4.jpg', discount: 20 },
+    { name: 'Checkered Shirt', price: 180, rating: 4.5, image: '/images/shirt5.jpg' },
+    { name: 'Sleeve Striped T-shirt', price: 130, rating: 4.5, image: '/images/shirt6.jpg' },
     
   ];
   

@@ -1,9 +1,9 @@
 import Image from "next/image";
 const styles = [
     { name: 'Casual', image: '/images/download.jpeg' },
-    { name: 'Formal', image: '/images/formal.jpg' },
-    { name: 'Party', image: '/images/party.jpg' },
-    { name: 'Gym', image: '/images/gym.jpg' },
+    { name: 'Formal', image: '/images/shirt.jpg' },
+    { name: 'Party', image: '/images/shirt1.jpg' },
+    { name: 'Gym', image: '/images/shirt2.jpg' },
   ];
   
   const BrowseByStyle = () => {
