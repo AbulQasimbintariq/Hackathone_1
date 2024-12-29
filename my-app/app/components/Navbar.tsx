@@ -1,3 +1,5 @@
+import productDetail from "./productDetail"
+import Link from "next/link"
 const Navbar = () => {
     return (
       <nav className="bg-white shadow-md">
@@ -7,7 +9,10 @@ const Navbar = () => {
             <li>
             <select>
             <option value="all">Shop</option>
-            <option value="electronics">Electronics</option>
+            <option value="electronics">
+            <Link href="#"> <a >man product</a>
+            </Link>
+            </option>
             <option value="clothing">Clothing</option>
             <option value="accessories">Accessories</option>
             <option value="home">Home & Garden</option>
