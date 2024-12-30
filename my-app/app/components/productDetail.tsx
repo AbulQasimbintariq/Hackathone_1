@@ -1,19 +1,12 @@
 import Image from "next/image";
+import HeroSection from "./HeroSection";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 const productDetail= () => {
   return (
-    <div className="container mx-auto p-4">
-      <header className="flex justify-between items-center py-4">
-        <h1 className="text-2xl font-bold">SHOP.CO</h1>
-        <nav>
-          <ul className="flex space-x-4">
-            <li><a href="#" className="hover:underline">Shop</a></li>
-            <li><a href="#" className="hover:underline">On Sale</a></li>
-            <li><a href="#" className="hover:underline">New Arrivals</a></li>
-            <li><a href="#" className="hover:underline">Brands</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <div>
+     <Navbar />
+      <HeroSection />
       <main>
         <section className="text-center py-12">
           <h2 className="text-4xl font-bold mb-4">Find Clothes That Matches Your Style</h2>
@@ -82,12 +75,8 @@ const productDetail= () => {
           <button className="bg-black text-white px-6 py-2">Subscribe to Newsletter</button>
         </section>
       </main>
-
-      <footer className="py-12 text-center">
-        <p>&copy; 2000-2023 SHOP.CO. All Rights Reserved</p>
-        <p>We have clothes that suit your style and which you are proud to wear. From women to men.</p>
-      </footer>
-    </div>
+     <Footer />
+   </div>
   );
 };
 
