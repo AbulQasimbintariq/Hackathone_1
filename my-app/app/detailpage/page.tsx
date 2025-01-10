@@ -1,7 +1,7 @@
 import Image from "next/image";
-import HeroSection from "./HeroSection";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import HeroSection from "../components/HeroSection";
+import Navbar from "../Navbar";
+import Footer from "../components/Footer";
 const productDetail= () => {
   return (
     <div>
