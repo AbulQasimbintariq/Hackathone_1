@@ -1,0 +1,388 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+/* Hero Section Css */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 20px;;
+}
+
+.content {
+  align-items: center;
+  background-color: rgb(241, 238, 238);
+  border: 1px solid  black ;
+}
+@media only screen and (max-width: 700px) {
+  .content {
+  flex-wrap: wrap;
+  }
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  
+  }
+}
+
+
+.HeroP {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+@media only screen and (max-width: 700px) {
+  .HeroP {
+    font-size: .9rem;
+  
+  }
+}
+
+.shopNow {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.shopNow:hover {
+  background-color: #555;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 40px; */
+  /* width:100%; */
+  max-width: 600px;
+  background-color: black;
+}
+
+
+/* Main Section Css */
+
+.mainSection {
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  text-align: center;
+  margin: 10px;
+}
+
+.product h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.viewAll {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.viewAll:hover {
+  background-color: #555;
+}
+
+.styles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.style {
+  text-align: center;
+  margin: 10px;
+}
+
+.style h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Description css */
+
+
+.descriptionSection {
+  padding: 40px 20px;
+  text-align: center;
+  display: flexbox;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .carousel {
+  flex-wrap: wrap;
+  }
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #555;
+}
+
+.testimonial {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.testimonial.active {
+  display: flex;
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 1rem;
+  color: #555;
+}
+  
+/*  Navbar Shop Options */
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  color: black;
+  /* padding: 16px; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* cart section */
+
+
+@media only screen and (max-width: 800px) {
+  .cartImg {
+  flex-wrap: wrap;
+  }
+}
+
+
+
+/* Tshirtcart */
+
+
+@media only screen and (max-width: 800px) {
+  .TshirtCart {
+  flex-wrap: wrap;
+  }
+}
+
+
+
+/* Cart section css */
+
+.Mycart{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Mycart {
+    display: inline;
+  }
+}
+.Order{
+  width: "35%";
+   /* border: "1px solid #ccc";
+   padding: "20px";
+  border-radius: "5px" */
+  }
+  @media only screen and (max-width: 600px) {
+    .order {
+      width: 100%;
+    }
+  }
+  
+.orderCart{
+  width: 60%
+}
+
+  @media only screen and (max-width: 600px) {
+    .orderCart {
+      width: 100%;
+    }
+  }
+
+.filtercart{
+  width: 25%;
+}
+
+  @media only screen and (max-width: 600px) {
+    .filtercart {
+      width: 100%;
+    }
+  }
+
+  .casualshirts{
+      width: 70%;
+        }
+
+  @media only screen and (max-width: 600px) {
+    .casualshirts {
+      width: 100%;
+    }
+  }
